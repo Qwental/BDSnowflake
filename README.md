@@ -13,7 +13,7 @@
 ### инструкция по запуску
 1. git clone
 ```bash
-   git clone <URL_REPO>
+   git clone https://github.com/Qwental/BDSnowflake.git
    cd BDSnowflake
 ```
 
