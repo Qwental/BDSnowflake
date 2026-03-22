@@ -32,38 +32,6 @@ docker compose up -d
 ```bash
 docker compose logs postgres
 ```
-
-ожидается:
-
-```text
-petshop_postgres  |                     info                    
-petshop_postgres  | --------------------------------------------
-petshop_postgres  |  Проверка на легит: колво строк по таблицам
-petshop_postgres  | (1 row)
-petshop_postgres  | 
-petshop_postgres  |       table_name      | rows  
-petshop_postgres  | ----------------------+-------
-petshop_postgres  |  dim_material         |    11
-petshop_postgres  |  dim_brand            |   383
-petshop_postgres  |  dim_pet_category     |     5
-petshop_postgres  |  dim_product_category |     3
-petshop_postgres  |  dim_breed            |     3
-petshop_postgres  |  dim_country          |   230
-petshop_postgres  |  dim_date             |   364
-petshop_postgres  |  dim_seller           | 10000
-petshop_postgres  |  dim_store            | 10000
-petshop_postgres  |  dim_customer         | 10000
-petshop_postgres  |  dim_supplier         | 10000
-petshop_postgres  |  fact_sales           | 10000
-petshop_postgres  |  dim_product          | 10000
-petshop_postgres  |  mock_data (staging)  | 10000
-petshop_postgres  | (14 rows)
-
-что-то там
-
-petshop_postgres  | 2026-03-18 17:19:24.203 UTC [1] LOG:  database system is ready to accept connections
-```
-
 4. готовые запросы для проверки через CLI
 подрубаемся:
 ```bash
